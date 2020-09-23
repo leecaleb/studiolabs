@@ -1,0 +1,13 @@
+.difficulty-preference-container {
+}
+
+.difficulty-option {
+    float: left;
+    margin: 20px;
+    background-color: grey;
+}
+
+.button {
+    font-size: 20px;
+    padding: 10px;
+}

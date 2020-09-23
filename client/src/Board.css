@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    box-sizing: content-box;
+    border: 3px solid black;
+    border-right: 2px solid black;
+    width: 450px;
+    height: 450px;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(9, 50px);
+}
+
+.element {
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.element[data-col="2"] {
+    border-right: 3px solid black;
+    
+}
+
+.element[data-col="5"] {
+    border-right: 3px solid black;
+}
+
+.element[data-row="2"] {
+    border-bottom: 3px solid black;
+}
+
+.element[data-row="5"] {
+    border-bottom: 3px solid black;
+}
+
+#input-cell {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border: none;
+    text-align: center;
+    border-color: 'transparent';
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#hint-cell {
+    margin: auto;
+    text-align: center;
+    justify-items: center;
+    font-size: 30px;
+    font-weight: 700;
+}
