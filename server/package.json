@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha --timeout 10000",
     "start": "node app.js",
-    "dev": "set NODE_ENV=dev && nodemon app.js"
+    "dev": "set NODE_ENV=dev && nodemon app.js",
+    "docker:build": "docker build -t server:dev .",
+    "docker:run": "docker run -it --rm -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3000:3000 -e CHOKIDAR_USEPOLLING=true server:dev"
   },
   "author": "",
   "license": "ISC",

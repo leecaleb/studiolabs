@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "docker:build": "docker build -t client:dev .",
+    "docker:run": " docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 8000:8000 -e CHOKIDAR_USEPOLLING=true client:dev"
   },
   "author": "",
   "license": "ISC",
