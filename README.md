@@ -13,3 +13,6 @@ npm run docker:build
 ```
 npm run docker:run
 ```
+
+# Credit
+application fetches puzzles from a server set up by [berto](https://github.com/berto/sugoku)
